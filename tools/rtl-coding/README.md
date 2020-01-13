@@ -1,5 +1,4 @@
 # RTL Coding Guidelines
 
-# Sections
 
 
