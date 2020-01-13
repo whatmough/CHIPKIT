@@ -16,4 +16,5 @@ Tools to generate RTL modules/instances, Python code, C code, Markdown, …
 
 ## Examples
 
+Two examples are included here: the first is a script to generate memory mapped registers automatically; the second script generates chip pad rings.
 
