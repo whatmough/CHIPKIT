@@ -11,6 +11,7 @@ This project provides key hardware IP and tools to enable rapid research test ch
 We have delivered an extensive tutorial on research test chip development at the MICRO conference 2019.  The slides are availale below.
 
 [CHIPKIT tutorial at MICRO 2019](https://www.microarch.org/micro52/program/workshops.html#chipkit)
+
 [CHIPKIT tutorial slides](https://mrc-donato.github.io/CHIPKIT-Tutorial/)
 
 ## Citing
