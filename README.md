@@ -34,7 +34,8 @@ Please send a [pull request](https://help.github.com/articles/creating-a-pull-re
 This project was developed at Harvard University to support a number of generations of research test chips.
 
 [Paul Whatmough](https://www.linkedin.com/in/paul-whatmough-2062729/), Arm Research, Boston, MA
-Hyunkwang Lee
+
+Hyunkwang Lee, Harvard University, Boston, MA
 
 ## License
 
