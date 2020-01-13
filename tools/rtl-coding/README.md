@@ -1,4 +1,0 @@
-# RTL Coding Guidelines
-
-
-
