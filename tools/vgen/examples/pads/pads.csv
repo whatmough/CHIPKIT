@@ -1,0 +1,14 @@
+# Example pad definition file.
+
+Name               │direction  │side  │bump  │description          
+                   
+# Clocks           
+HCLK               │input      │3     │Z9    │"This is a clock (example description)"
+                   
+# Resets           
+PORESETn           │input      │3     │Y10   │
+
+# Signals
+INPUT_SIGNAL           │input      │3     │Y10   │
+OUTPU_SIGNAL           │output      │3     │Y10   │
+

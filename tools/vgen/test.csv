@@ -1,0 +1,24 @@
+
+# Python-style comments, or
+// C-style comments are OK.
+
+
+# a single format line beginning with the start (*) character defines the keys:
+
+* this, that
+
+2,3
+4,  5
+7,8
+
+# more comments
+
+1,9
+
+// New signals:
+blah,blaf
+
+// New signals:
+blah,blaf
+
+
