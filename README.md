@@ -13,7 +13,6 @@ We have delivered an extensive tutorial on research test chip development at the
 [CHIPKIT tutorial at MICRO 2019](https://www.microarch.org/micro52/program/workshops.html#chipkit)
 [CHIPKIT tutorial slides](https://mrc-donato.github.io/CHIPKIT-Tutorial/)
 
-[//]: # (
 ## Citing
 
 
@@ -24,7 +23,6 @@ If you find this tool useful for your research, please use the following bibtex 
 
 }
 ```
-)
 
 ## Contributing
 
