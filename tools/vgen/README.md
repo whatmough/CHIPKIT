@@ -1,4 +1,4 @@
-# Verilog GEnerator (VGEN)
+# Verilog GENerator (VGEN)
 
 ## Introduction
 
