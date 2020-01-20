@@ -12,6 +12,15 @@ CHIPKIT includes `VGEN`, which is a simple Python framework for writing template
 In research projects, the design specification is often lacking in detail and may even be quite fluid during the implementation phase.
 Therefore, it is essential to follow an agile process for developing and maintaining these repetative coding patterns.
 
+VGEN is a lightweight Python module.
+The database data structure is represented as a list of dictionaries.
+The keys for the dictionaries are defined in the header line of the CSV file, so it is easy to add new attributes by simply editing the CSV file.
+CHIPKIT currently includes example VGEN scripts for generating CSRs and IO pads, and is easily extensible to other common chip design tasks.
+The figure below outlines the typical `VGEN` usage flow.
+
+![vgen](vgen.png)
+
+
 ## CSR Example
 
 As a prototypical example, consider the implementation of control and status registers (CSRs).
@@ -20,39 +29,18 @@ Whenever a new CSR is added during the design process, the following source file
 Maintaining and validating all of this is extremely time consuming and error-prone.
 `VGEN` automates the generation of all this code.
 
-TODO add figure
-
-![vgen](vgen%20(1).pdf)
-
-Fig.~\ref{fig:vgen} gives an outline of the VGEN flow, which operates in two stages.
+The figure above outlines the `VGEN` flow, which operates in two stages.
 The first step is to update a CSR database with signals from the design, which can be done periodically as the RTL is developed.  
-The VGEN tool automatically updates the database (\texttt{vgen -update}) by parsing RTL modules to find signal names with a matching prefix or postfix that indicates a CSR should be attached to the signal.
+The VGEN tool automatically updates the database (`vgen -update`) by parsing RTL modules to find signal names with a matching prefix or postfix that indicates a CSR should be attached to the signal.
 Any matching signals are then cross-referenced against the database to see if they already exist and if any extracted parameters, such as the bitwidth of the register have changed.
 If it is a new addition or a modification, the change will be made in the database.
-%, along with any associated parameters.
 The database is stored in comma-separated value (CSV) format, which allows it to be easily viewed and edited in a spreadsheet program.
 The CSV database can be version controlled alongside the RTL.
 
-The second stage of operation is to proceed and generate templated output code with values from the database (\texttt{vgen -generate}).
+The second stage of operation is to proceed and generate templated output code with values from the database (`vgen -generate`).
 For CSRs, an RTL module is generated with memory-mapped registers as described in the CSV database, along with code for a module instantiation template.
 Documentation in Markdown format is also generated, along with C and Python software register definitions and tests to confirm correct operation of the automatically generated code.
 
-VGEN is a lightweight Python module.
-The database data structure is represented as a list of dictionaries.
-The keys for the dictionaries are defined in the header line of the CSV file, so it is easy to add new attributes by simply editing the CSV file.
-CHIPKIT currently includes example VGEN scripts for generating CSRs and IO pads, and is easily extensible to other common chip design tasks.
+## Pads Example
 
-%In summary, in a typical development process, a designer may decide it would be a good idea to allow an internal state-machine state to be read out to aid debug.  
-%This can be achieved by adding a postfix to a signal name, running 
-%\texttt{vgen -update -generate} 
-%and recompiling.
-
-
-%
-%% TODO
-%CSV database of objects, could be registers, pins, rams, pads, anything
-%Implemented in Python as a list of dictionaries
-%Tools to automatically populate and update this database from RTL, C, Python, or even documentation
-%Easy to use signal or module name pre/post -fix to mark things for automation
-%Tools to generate RTL modules/instances, Python code, C code, Markdown, …
-
+TODO
