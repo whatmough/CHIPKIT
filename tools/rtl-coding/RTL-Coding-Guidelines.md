@@ -82,6 +82,7 @@ When using FPGAs with an RTL codebase, this macro can be easily redefined to inf
 
 ```systemverilog
 // Include file contains flip-flop inference macro
+// Add this at the top of every RTL source file
 `include RTL.svh
 
 // Traditional flip-flop inference template
@@ -107,32 +108,14 @@ TODO - example
 
 ### Project Directory Organization
 
-.
-+-- _config.yml
-+-- _drafts
-|   +-- begin-with-the-crazy-ideas.textile
-|   +-- on-simplicity-in-technology.markdown
-+-- _includes
-|   +-- footer.html
-|   +-- header.html
-+-- _layouts
-|   +-- default.html
-|   +-- post.html
-+-- _posts
-|   +-- 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   +-- 2009-04-26-barcamp-boston-4-roundup.textile
-+-- _data
-|   +-- members.yml
-+-- _site
-+-- index.html
-
+TODO
 
 ```
 project
 │   README.md
 │   file001.txt    
 │
-└───folder1
+└───folder1 
 │   │   file011.txt
 │   │   file012.txt
 │   │
