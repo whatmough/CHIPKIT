@@ -12,7 +12,7 @@ CHIPKIT includes `VGEN`, which is a simple Python framework for writing template
 In research projects, the design specification is often lacking in detail and may even be quite fluid during the implementation phase.
 Therefore, it is essential to follow an agile process for developing and maintaining these repetative coding patterns.
 
-VGEN is a lightweight Python module.
+`VGEN` is a lightweight Python module.
 The database data structure is represented as a list of dictionaries.
 The keys for the dictionaries are defined in the header line of the CSV file, so it is easy to add new attributes by simply editing the CSV file.
 CHIPKIT currently includes example VGEN scripts for generating CSRs and IO pads, and is easily extensible to other common chip design tasks.
