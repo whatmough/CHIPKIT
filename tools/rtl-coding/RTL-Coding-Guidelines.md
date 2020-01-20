@@ -77,7 +77,7 @@ endmodule  // my_counter
 In addition to these guidelines, we also recommend the strict use of a pre-processor macro for register inference.
 This has a number of advantages, including: 1) significant reduction in lines of code, 2) removes the risk of poor inference style, e.g. embedded logic, 3) enforces use of a rising-edge, async active-low reset, 4) allows the register inference template to be changed to suit ASIC or FPGA.
 A macro is used instead of a module to reduce simulation overhead.
-The CHIPKIT RTL header file (`RTL.svh`) includes a macro definition `\`FF()` for this purpose, which replaces the traditional inference template, as shown in the snippet below.  
+The CHIPKIT RTL header file (`RTL.svh`) includes a macro definition `` `FF()`` for this purpose, which replaces the traditional inference template, as shown in the snippet below.  
 When using FPGAs with an RTL codebase, this macro can be easily redefined to infer a synchronous reset, which is more common.
 
 ```systemverilog
