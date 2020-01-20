@@ -18,7 +18,7 @@ The keys for the dictionaries are defined in the header line of the CSV file, so
 CHIPKIT currently includes example VGEN scripts for generating CSRs and IO pads, and is easily extensible to other common chip design tasks.
 The figure below outlines the typical `VGEN` usage flow.
 
-![vgen](vgen.png)
+![vgen](vgen.png | width=200)
 
 
 ## CSR Example
