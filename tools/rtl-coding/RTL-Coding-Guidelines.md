@@ -13,7 +13,7 @@ SV includes a number of more advanced language features that prevent a whole cla
 This document outlines some coding guidelines for writing bug-free RTL in SV.
 More generally, we offer advice for arranging RTL projects.
 
-## SystemVerilog RTL Coding Style Overview
+## Overview
 
 SV is a very large language with many verification-oriented features that are not relevant to writing synthesizable RTL.
 Therefore, we use a strict RTL coding style, which can be summarized in the following directives:
@@ -48,6 +48,7 @@ These significantly reduce the verbosity of connecting modules and provide addit
 
 * **Use all-caps for top-level module port signals.**
 
+### Module Example
 
 The following tiny RTL example module `my_counter` demonstrates some of these guidelines in a compact example.
 
@@ -97,6 +98,10 @@ end
 `FF(count_next, count, clock, enable, reset_n, '0); 
 ```
 
+### SV Assertions
+
+TODO
+
 ### Instantiated Library Components
 
 Physical IP such as SRAMs, IO cells, clock oscillators, and synchronizers need to be instantiated in the RTL.
@@ -127,6 +132,50 @@ project
 └───folder2
     │   file021.txt
     │   file022.txt
+```
+
+
+
+### RTL Module Logging
+
+Opening waveforms should be a last resort during RTL development
+Simulation is slower
+Opening and working with a GUI is slow and clumsy
+Printing signals from a block-level test bench is quite clumsy
+Logging directly from an RTL module is a better approach
+Wrap non-synthesizable debug code in ‘ifndef SYNTHESIS
+Use reset signal to mask junk during reset
+Can generate a lot of clutter in the simulation transcript
+Even better is to log to file with module name
+You know where to look for module specific debug data
+Easy to parse in python to check against a model (especially datapath)
+
+
+```systemverilog
+module my_module (
+  // …signals…
+);
+
+// Module body
+
+
+// Logging code
+
+`LOGF_INIT        // This macro opens the log
+`LOGF(clk, rstn, enable, format_expr)
+`LOGF(clk, rstn,
+  iss.valid,
+  (”| %s | %s |”,iss.op,iss.data)
+);
+
+
+endmodule  // my_module
+```
+
+
+```systemverilog
+// Macro prototype
+`LOGF(clk, rstn, enable, format_expr)
 ```
 
 
