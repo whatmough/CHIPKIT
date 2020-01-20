@@ -22,7 +22,7 @@ Maintaining and validating all of this is extremely time consuming and error-pro
 
 TODO add figure
 
-![vgen](https://github.com/whatmough/CHIPKIT/blob/master/tools/vgen/vgen%20(1).pdf "VGEN")
+![vgen](vgen%20(1).pdf)
 
 Fig.~\ref{fig:vgen} gives an outline of the VGEN flow, which operates in two stages.
 The first step is to update a CSR database with signals from the design, which can be done periodically as the RTL is developed.  
