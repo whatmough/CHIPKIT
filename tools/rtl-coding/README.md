@@ -184,14 +184,14 @@ endmodule  // my_module
 
 ### Open Source Hardware
 
-* [CHIPKIT: An agile, reusable open-source framework for rapid test chip development] (https://github.com/whatmough/CHIPKIT)
-* [OH! Open Hardware for Chip Designers] (https://github.com/aolofsson/oh)
-* [Pulp Platform] (https://github.com/pulp-platform)
-* [BaseJump STL: A Standard Template Library for SystemVerilog] (https://github.com/bespoke-silicon-group/basejump_stl)
+* [CHIPKIT: An agile, reusable open-source framework for rapid test chip development](https://github.com/whatmough/CHIPKIT)
+* [OH! Open Hardware for Chip Designers](https://github.com/aolofsson/oh)
+* [Pulp Platform](https://github.com/pulp-platform)
+* [BaseJump STL: A Standard Template Library for SystemVerilog](https://github.com/bespoke-silicon-group/basejump_stl)
 
 ### Tutorial Material
 
-* [Migrating from AHB to AXI based SoC Designs] (https://www.doulos.com/knowhow/arm/Migrating_from_AHB_to_AXI/)
+* [Migrating from AHB to AXI based SoC Designs](https://www.doulos.com/knowhow/arm/Migrating_from_AHB_to_AXI/)
 
 
 
