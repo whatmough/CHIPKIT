@@ -48,7 +48,7 @@ This project was developed at Harvard University to support a number of generati
 
 [Paul Whatmough](https://www.linkedin.com/in/paul-whatmough-2062729/), Arm Research, Boston, MA
 
-Sae-kyu Lee, IBM Research
+Sae-Kyu Lee, IBM Research
 
 Hyunkwang Lee, Harvard University, Boston, MA
 
