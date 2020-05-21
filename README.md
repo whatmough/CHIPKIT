@@ -19,13 +19,14 @@ We have delivered an extensive tutorial on research test chip development at the
 The paper below is a good place to start exploring research test chip methodology.
 
 [CHIPKIT Paper (arxiv)](https://arxiv.org/abs/2001.04504)
+
 [CHIPKIT Paper (Xplore)](https://ieeexplore.ieee.org/document/9096507)
 
 ## Citing
 
 If you find this tool useful for your research, please use the following bibtex to cite us,
 
-'''
+```
 @ARTICLE{chipkit_micro2020,
   author={P. {Whatmough} and M. {Donato} and G. {Ko} and S. K. {Lee} and D. {Brooks} and G. {Wei}},
   journal={IEEE Micro}, 
@@ -34,7 +35,7 @@ If you find this tool useful for your research, please use the following bibtex 
   volume={},
   number={},
   pages={1-1},}
-'''
+```
 
 
 ## Contributing
