@@ -1,4 +1,4 @@
-# CHIPKIT RTL Coding Guidelines
+# SystemVerilog RTL Coding Guidelines
 
 Research test chip projects are typically severely time constrained.
 Therefore, it is important to use an RTL development approach that is 1) efficient, 2) minimizes bugs, and 3) is supported by front-to-back EDA tool flows.
