@@ -12,7 +12,7 @@
 //
 // - All of these macros should be synthesis safe, no need to wrap them.
 //
-// - For bigger designs, a framework such as UVM may be preferred.
+// - For bigger designs, a framework such as UVM may be preferred for validation purposes.
 //
 
 
