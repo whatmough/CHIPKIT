@@ -7,11 +7,9 @@
 This project provides key hardware IP and tools to enable rapid research test chip development.
 
 
-#### Companion Paper [\[IEEEXplore\]](https://ieeexplore.ieee.org/document/9096507) [\[Arxiv\]](https://arxiv.org/abs/2001.04504) 
+#### Companion Paper [\[IEEEXplore\]](https://ieeexplore.ieee.org/document/9096507), [\[Arxiv\]](https://arxiv.org/abs/2001.04504) 
 
-#### Tutorial Material [CHIPKIT @ ISCA'20](https://www.iscaconf.org/isca2020/program/workshops.html#chipkit) 
-[CHIPKIT @ MICRO'19](https://www.microarch.org/micro52/program/workshops.html#chipkit) 
-[Website](https://mrc-donato.github.io/CHIPKIT-Tutorial/)
+#### Tutorial Material [CHIPKIT @ISCA'20](https://www.iscaconf.org/isca2020/program/workshops.html#chipkit), [CHIPKIT @MICRO'19](https://www.microarch.org/micro52/program/workshops.html#chipkit), [Tutorial Website](https://mrc-donato.github.io/CHIPKIT-Tutorial/)
 
 
 ## BibTeX
