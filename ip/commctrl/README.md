@@ -12,18 +12,16 @@ The off-chip hosting uses the standard UART protocol and therefore requires noth
 ## Description
 
 Usage:
-- Initialize SRAMs attached to AHB bus
-    - Load CM0 code memory
-    - Load input and mega memories
-- Control SM2 system controller
-    - Write/Read SRAM Control register (EMA[2:0], EMAW[1:0])
-    - Write/Read PAD Control register (ST[1:0], DS[1:0], SL)
-    - Force internal reset using frcintrst register
-    - Watchdog, system, Lockup reset enables
-- Configure Minerva NN Accelerator
-    - HREGs / FREGs
-    - read out performance counters and status
+- Issues single bus transactions
+    - Write a single 32b location
+    - Read a single 32b location
+- Use to:
+    - read/write control and statue registers
+    - Load SRAMs with binaries or data
+    - Readback SRAMs containing data
 
+
+### Block Diagram
 
 <img src="commctrl_block_diagram.png"/>
 
