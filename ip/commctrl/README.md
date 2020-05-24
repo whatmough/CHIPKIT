@@ -6,6 +6,9 @@ COMMCTRL is an AHB bus master that allows for straightforward off-chip hosting o
 
 The off-chip hosting uses the standard UART protocol and therefore requires nothing more complicated than a simple terminal app for interactive tests.  For scripted tests, any UART library can be used, e.g. `pyserial` in a Python script.
 
+#### TODO: Release Python testing CLI - Chip LOad Tool (CLOT)
+
+
 ## Description
 
 Usage:
