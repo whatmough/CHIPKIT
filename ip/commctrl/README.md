@@ -1,9 +1,12 @@
-# COMMCTRL Master
+# UART AHB Master (COMMCTRL)
 
 ## Introduction
 
-COMMCTRL is intended to control and communicate with the SoC using UART or Scan Chain
-It works as a Master module attached to AHB-Lite bus system in SoC. 
+COMMCTRL is an AHB bus master that allows for straightforward off-chip hosting over a simple USB interface.  This makes test chip bring up and testing extremely quick and easy!
+
+The off-chip hosting uses the standard UART protocol and therefore requires nothing more complicated than a simple terminal app for interactive tests.  For scripted tests, any UART library can be used, e.g. `pyserial` in a Python script.
+
+## Description
 
 Usage:
 - Initialize SRAMs attached to AHB bus
@@ -20,8 +23,9 @@ Usage:
 
 <img src="commctrl_block_diagram.png"/>
 
-## Description
-### UART
+
+### UART Protocal
+
 - UART Configurations
     - Start bit : 1 bit
     - Data bit : 8 bits
@@ -90,7 +94,7 @@ Usage:
 
 ### ERROR Code
 #### Decode Error
-|PRIORITY|Error Code|Name|HOW TO FIX|
+|PRIORITY|Error Code|Name|Resolution|
 |:---:|:---:|:---:|:--- |
 |0|10|Instruction Size|For Write, Instruction size should be 23<br>For Read, Instruction size should be between 12 and 23|
 |1|11|Instruction Type|For Write, BYTE0 should be W or w<br>For Read, BYTE0 should be R or r|
@@ -123,38 +127,38 @@ Usage:
 #### Examples
 - **Normal AHB Write/Read transactions**
     - Write<br>
-      W 0x00000000 0x12341234<br>
-      W 0x00000004 0x43214321
+      `W 0x00000000 0x12341234`<br>
+      `W 0x00000004 0x43214321`
     - Read<br>
-      R 0x00000000<br>
+      `R 0x00000000`<br>
       HRDATA: 0x12341234<br>
-      R 0x00000004 2032<br>
+      `R 0x00000004 2032`<br>
       HRDATA: 0x43214321
 - **HMSEL Write/Read transaction**
     - Write<br>
-      W 0x10000000 0x00000001
+      `W 0x10000000 0x00000001`
     - Read<br>
-      R 0x10000000<br>
+      `R 0x10000000`<br>
       HMSEL: 1
 
 - **Decode Error**
     - **Instruction Size Error**<br>
-      W 0X00000004 0X2000456<br>
+      `W 0X00000004 0X2000456`<br>
       DECODE_ERROR: 10
     - **Separator Error**<br>
-      W 3X00000004 0X20000456<br>
+      `W 3X00000004 0X20000456`<br>
       DECODE_ERROR: 20
     - **Address Byte Error**<br>
-      W 0XP0000000 0X2000FC00<br>
+      `W 0XP0000000 0X2000FC00`<br>
       DECODE_ERROR: 37
     - **Write Data Byte Error**<br>
-      W 0X00000000 0X2U00FC00<br>
+      `W 0X00000000 0X2U00FC00`<br>
       DECODE_ERROR: 46
 - **AHB Error**<br>
     - **Unmapped Region Access Error**<br>
-      W 0X70000010 0X00000000<br>
+      `W 0X70000010 0X00000000`<br>
       AHB_ERROR: HADDR=0X70000010<br>
-      R 0XFFFFFFFC<br>
+      `R 0XFFFFFFFC`<br>
       AHB_ERROR: HADDR=0XFFFFFFFC<br>
 
 
