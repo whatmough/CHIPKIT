@@ -21,10 +21,11 @@ Usage:
     - HREGs / FREGs
     - read out performance counters and status
 
+
 <img src="commctrl_block_diagram.png"/>
 
 
-### UART Protocal
+### UART Protocol
 
 - UART Configurations
     - Start bit : 1 bit
