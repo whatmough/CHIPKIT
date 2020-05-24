@@ -32,7 +32,7 @@ The vast majority of RTL modules do not require more than one clock and reset.
 Any logic that *requires* multiple clocks should be careful contained in a special module.
 
 * **Use the `logic` type exclusively.**
-Replaces both the older \texttt{wire} and (very confusing) \texttt{reg} types.
+Replaces both the older `wire` and (very confusing) `reg` types.
 Provides compile-time checking for multiple drivers.
 
 * **Use the `always_comb` keyword for logic.**
@@ -191,6 +191,7 @@ endmodule  // my_module
 
 ### Tutorial Material
 
+* [CHIPKIT IEEE Micro paper](https://ieeexplore.ieee.org/document/9096507)
 * [Migrating from AHB to AXI based SoC Designs](https://www.doulos.com/knowhow/arm/Migrating_from_AHB_to_AXI/)
 
 
