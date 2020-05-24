@@ -6,25 +6,17 @@
 
 This project provides key hardware IP and tools to enable rapid research test chip development.
 
-## Tutorial Material
 
-We have delivered an extensive tutorial on research test chip development at the MICRO conference 2019.  The slides are available below.
+#### Companion Paper [\[IEEEXplore\]](https://ieeexplore.ieee.org/document/9096507) [\[Arxiv\]](https://arxiv.org/abs/2001.04504) 
 
-[CHIPKIT tutorial at MICRO 2019](https://www.microarch.org/micro52/program/workshops.html#chipkit)
+#### Tutorial Material [CHIPKIT @ ISCA'20](https://www.iscaconf.org/isca2020/program/workshops.html#chipkit) 
+[CHIPKIT @ MICRO'19](https://www.microarch.org/micro52/program/workshops.html#chipkit) 
+[Website](https://mrc-donato.github.io/CHIPKIT-Tutorial/)
 
-[CHIPKIT tutorial slides](https://mrc-donato.github.io/CHIPKIT-Tutorial/)
 
-## CHIPKIT IEEE Micro Paper
+## BibTeX
 
-The paper below is a good place to start exploring research test chip methodology.
-
-[CHIPKIT Paper (arxiv)](https://arxiv.org/abs/2001.04504)
-
-[CHIPKIT Paper (Xplore)](https://ieeexplore.ieee.org/document/9096507)
-
-## Citing
-
-If you find this tool useful for your research, please use the following bibtex to cite us,
+If you find this project useful for your research, please use the following bibtex to cite us,
 
 ```
 @ARTICLE{chipkit_micro2020,
@@ -44,7 +36,7 @@ Please send a [pull request](https://help.github.com/articles/creating-a-pull-re
 
 ## Authors
 
-This project was developed at Harvard University to support a number of generations of research test chips.
+The material in this project was developed at the [VLSI and Architecture group](https://vlsiarch.eecs.harvard.edu/) at Harvard University to support many generations of research test chips.
 
 [Paul Whatmough](https://www.linkedin.com/in/paul-whatmough-2062729/), Arm Research, Boston, MA
 
